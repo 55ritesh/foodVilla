@@ -1,0 +1,12 @@
+// {
+//     // "plugins": [ ["transform-remove-console", 
+//     // { "exclude": [ "error", "warn"] }] ]
+// }
+
+{
+    // to understand import and ES6
+    "presets": [["@babel/preset-env", {"targets": {"node": "current"}}],
+    // this is required because our code was not understanding react
+     ["@babel/preset-react", { "runtime": "automatic"}]
+   ]
+}   
