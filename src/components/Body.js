@@ -9,7 +9,7 @@ import useOnline from "../utils/useOnline";
 import UserContext from "../utils/UserContext";
 import CoverImage from "../assets/img/poster.jpg";
 
-
+// body js is seach header 
 
 const Body = ()=>{
       
@@ -47,7 +47,8 @@ if(!isOnline){
 
 
 // not render component(early return)
-if(!allRestaurants) return null;
+if(!allRestaurants) 
+return null;
 
 // if(filteredRestaurants?.length=== 0) return <h1>No Restaurant match your filter</h1>
 
@@ -70,6 +71,7 @@ if(!allRestaurants) return null;
                
             }}
             />
+            
             <button 
             data-testid="search-btn"
             className="bg-green-900 rounded-r-full p-2 m-1"
